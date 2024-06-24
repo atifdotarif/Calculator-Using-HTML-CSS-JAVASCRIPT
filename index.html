@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+    <header>Calculator</header>
+
+    <main>
+        <div class="container">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" class="screen" />
+                </div>
+                <div class="row">
+                    <input type="button" value="AC" id="operators" onclick="display.value=''" />
+                    <input type="button" value="DE" id="operators"
+                        onclick="display.value=display.value.toString().slice(0,-1)" />
+                    <input type="button" value="%" id="operators" onclick="display.value+='%'" />
+                    <input type="button" value="&div;" id="operators" onclick="display.value+='/'" />
+                </div>
+                <div class="row">
+                    <input type="button" value="7" id="numbers" onclick="display.value+='7'" />
+
+                    <input type="button" value="8" id="numbers" onclick="display.value+='8'" />
+                    <input type="button" value="9" id="numbers" onclick="display.value+='9'" />
+                    <input type="button" value="x" id="operators" onclick="display.value+='*'" />
+                </div>
+                <div class="row">
+                    <input type="button" value="4" id="numbers" onclick="display.value+='4'" />
+                    <input type="button" value="5" id="numbers" onclick="display.value+='5'" />
+                    <input type="button" value="6" id="numbers" onclick="display.value+='6'" />
+                    <input type="button" value="-" id="operators" onclick="display.value+='-'" />
+                </div>
+                <div class="row">
+                    <input type="button" value="1" id="numbers" onclick="display.value+='1'" />
+                    <input type="button" value="2" id="numbers" onclick="display.value+='2'" />
+                    <input type="button" value="3" id="numbers" onclick="display.value+='3'" />
+                    <input type="button" value="+" id="operators" onclick="display.value+='+'" />
+                </div>
+                <div class="row">
+                    <input type="button" value="0" id="zero" onclick="display.value+='0'" />
+                    <input type="button" value="." id="numbers" onclick="display.value+='.'" />
+                    <input type="button" value="=" id="equal" />
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <button id="mode">Change Mode</button>
+        <br /><br /><br />
+        Made by Atif
+    </footer>
+</body>
+<script src="/script.js"></script>
+
+</html>
